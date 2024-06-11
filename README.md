@@ -7,7 +7,7 @@
 
 ## P9A  Tax Deduction Card Setup
 
-### Frappe Salary Component Mapping Process
+### Salary Component Mapping for P9A
 
 This guide explains the process of mapping salary components to the P9A Tax Deduction Card Type in a Frappe-based system. Follow these steps to configure and manage the salary components effectively.
 
