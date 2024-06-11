@@ -35,7 +35,7 @@ This guide explains the process of mapping salary components to the P9A Tax Dedu
 
 #### Access the Frappe Application
 
-1. **Log in to your Frappe instance with your credentials.**
+1. **Log into your Frappe instance with your credentials.**
 
 #### Navigate to Salary Component DocType
 
