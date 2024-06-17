@@ -48,7 +48,8 @@ This guide explains the process of mapping salary components to the P9A Tax Dedu
 
 4. **Create a new salary component in the Frappe system.**
 5. **Click on "Add Salary Component " to add a new component.**
-   ![image](https://github.com/navariltd/navari_csf_ke/assets/99787384/5a45a003-6566-481b-8c86-6beee8c7577d)
+  <img width="958" alt="Capture 256" src="https://github.com/navariltd/navari_csf_ke/assets/99787384/73299625-9ce4-4d87-89f6-c6398b7d8ec8">
+
    
 #### Fill in the Salary Component Details
 
