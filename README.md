@@ -41,7 +41,8 @@ This guide explains the process of mapping salary components to the P9A Tax Dedu
 
 2. **Go to the DocType list and search for "Salary Component".**
 3. **Click on "Salary Component" to view and manage the components.**
-   ![Salary Component](image.png)
+  ![image](https://github.com/navariltd/navari_csf_ke/assets/99787384/5a45a003-6566-481b-8c86-6beee8c7577d)
+
 
 #### Create New Salary Components
 
