@@ -16,6 +16,7 @@ frappe.query_reports["Sales Analytics Enhanced"] = {
         "Order Type",
         "Project",
         "User",
+        "Sales Person",
       ],
       default: "Customer",
       reqd: 1,

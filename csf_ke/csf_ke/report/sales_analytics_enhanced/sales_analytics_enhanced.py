@@ -15,9 +15,12 @@ class Analytics:
     def __init__(self, filters=None):
         self.filters = frappe._dict(filters or {})
         self.date_field = (
+            "creation" if self.filters.tree_type == "Sales Person"
+            else(
             "transaction_date"
             if self.filters.doc_type in ["Sales Order", "Purchase Order"]
             else "posting_date"
+            )
         )
         self.months = [
             "Jan",
@@ -141,6 +144,25 @@ class Analytics:
         elif self.filters.tree_type == "Project":
             self.get_sales_transactions_based_on_project()
             self.get_rows()
+
+        elif self.filters.tree_type == "Sales Person":
+            self.get_sales_transactions_based_on_sales_person()
+            self.get_rows()
+
+    def get_sales_transactions_based_on_sales_person(self):
+        entity = "sales_person as entity"
+        entity_name = "sales_person as entity_name"
+
+        if (self.filters["value_quantity"] == "Value"):
+            value_field = "allocated_amount as value_field"
+        else:
+            value_field = "allocated_amount as value_field"
+
+        self.entries = frappe.db.get_all(
+            "Sales Team",
+            filters={"parenttype": self.filters.doc_type},
+            fields=[entity, entity_name, value_field, "creation"]
+        )
 
     def get_sales_transactions_based_on_order_type(self):
         if self.filters["value_quantity"] == "Value":
